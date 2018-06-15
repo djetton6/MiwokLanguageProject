@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
     }
+    public void openNumbersList(android.view.View view) {
+        android.content.Intent i = new android.content.Intent(this, NumbersActivity.class);
+        startActivity (i);
+        }
+
 }
