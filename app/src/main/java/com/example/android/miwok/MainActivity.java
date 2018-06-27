@@ -15,6 +15,7 @@
  */
 package com.example.android.miwok;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -35,14 +36,31 @@ public class MainActivity extends AppCompatActivity {
     TextView numbers = (TextView) findViewById(R.id.numbers);
 
     // Set a click listener on that View
-    numbers.setOnClickListener(new View.OnClickListener()
+        numbers.setOnClickListener(new View.OnClickListener()
 
     {
 
-// The code in this method will be executed when the numbers View is clicked on.
+        // The code in this method will be executed when the numbers View is clicked on.
         @Override
         public void onClick (View view){
         Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
         startActivity(numbersIntent);
     }
-    });
+
+        // Find the View that shows the family category
+        TextView family = (TextView) findViewById(R.id.family);
+
+        // Set a click listener on that View
+        family.setOnClickListener(new View.OnClickListener() {
+
+            // The code in this method will be executed when the family View is clicked on.
+            //
+            // @Override
+            public void onClick(View view) {
+                Intent familyIntent = new Intent(MainActivity.this, FamilyMembersActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+    }
+}
