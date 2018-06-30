@@ -15,6 +15,7 @@
  */
 package com.example.android.miwok;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //Set the content of the activity to use the activity_main.xml layout file
-        setContextView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         //Find the View that shows the numbers category
         TextView numbers = (TextView) findViewById(R.id.numbers);
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Create a new intent
-                Intent phrasesIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
 
                 //Start the new activity
                 startActivity(phrasesIntent);
