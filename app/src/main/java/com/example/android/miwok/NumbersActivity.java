@@ -33,7 +33,7 @@ public class NumbersActivity extends AppCompatActivity {
 
 
         //Created an ArrayAdapter for adding vocabulary words to NumbersActivity.
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.activity_list_item, words);
 
         GridView listView = (GridView) findViewById(R.id.list);
 
