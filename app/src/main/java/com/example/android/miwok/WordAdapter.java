@@ -11,16 +11,25 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/**
+ * {@link WordAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
+ * based on a data source which is a list of [@link Word} objects.
+ */
+
 public class WordAdapter extends ArrayAdapter<Word> {
 
+    /**
+     * Create a new {@link WordAdapter} object.
+     *
+     * @param context is the current context (i.e. Activity that the adapter is being created in.
+     * @param words   is the list of {@link Word}s to be displayed.
+     */
 
-    public WordAdapter(Activity context, ArrayList<Word> androidFlavors)
+    public WordAdapter(Context context, ArrayList<Word> words) {
 
-    @NonNull
-    @Override
-    public Context getContext() {
-        return super.getContext();
-    }super()
+        super(context, 0, words);
+
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
