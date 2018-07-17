@@ -30,8 +30,14 @@ public class Word {
     /**
      * Get the default translation of the word.
      */
-    public String getmDefaultTranslation() {
+    public String getDefaultTranslation() {
         return mDefaultTranslation;
     }
 
+    /**
+     * Get the Miwok translation of the word.
+     */
+    public String getmMiwokTranslation() {
+        return mMiwokTranslation;
+    }
 }
