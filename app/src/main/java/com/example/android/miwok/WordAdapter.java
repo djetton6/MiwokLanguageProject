@@ -38,25 +38,25 @@ public class WordAdapter extends ArrayAdapter<Word> {
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
-// Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the {@link AndroidFlavor} object located at this position in the list
         Word currentWord = getItem(position);
 
-//Find the TextView in the list_item.xml layout with id version_name,
+        //Find the TextView in the list_item.xml layout with id version_name,
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-//Get the Miwok translation from the currentWord object and set this text on
-// the Miwok TextView.
+        //Get the Miwok translation from the currentWord object and set this text on
+        // the Miwok TextView.
         miwokTextView.setText(currentWord.getmMiwokTranslation());
 
-//Find the Textiew in the list_item.xml layout with the ID default_text_view.
+        //Find the Textiew in the list_item.xml layout with the ID default_text_view.
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-//Get the default translation fromm the currentWord object and set this text on
-// the default TextView.
+        //Get the default translation fromm the currentWord object and set this text on
+        // the default TextView.
 
-        defaultTextView.setText(currentWord.getmDefaultTranslation());
+        defaultTextView.setText(currentWord.getDefaultTranslation());
 
         //Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         //the ListView.
-
+        return listItemView;
 
     }
 }
