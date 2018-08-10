@@ -23,13 +23,24 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word("What is your name?", "tinnә oyaase'nә\n" +
                 "\n"));
         words.add(new Word("My name is...", "oyaaset..."));
-        words.add(new Word("four", "oyyisa"));
-        words.add(new Word("five", "massokka"));
-        words.add(new Word("six", "temmokka"));
-        words.add(new Word("seven", "kenekaku"));
-        words.add(new Word("eight", "kawinta"));
-        words.add(new Word("nine", "wo'e"));
-        words.add(new Word("ten", "na'aacha"));
+        words.add(new Word("How are you feeling?", "michәksәs?\n" +
+                "\n"));
+        words.add(new Word("I’m feeling good.\n" +
+                "\n", "kuchi achit\n" +
+                "\n"));
+        words.add(new Word("Are you coming?\n" +
+                "\n", "әәnәs'aa?\n" +
+                "\n"));
+        words.add(new Word("Yes, I’m coming.\n" +
+                "\n", "hәә’ әәnәm\n" +
+                "\n"));
+        words.add(new Word("I’m coming.\n" +
+                "\n", "әәnәm"));
+        words.add(new Word("Let’s go.\n" +
+                "\n", "yoowutis"));
+        words.add(new Word("Come here.\n" +
+                "\n", "әnni'nem\n" +
+                "\n"));
 
 
         //Created an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
