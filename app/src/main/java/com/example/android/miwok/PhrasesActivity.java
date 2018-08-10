@@ -19,9 +19,10 @@ public class PhrasesActivity extends AppCompatActivity {
 
         //Create a list of words
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "lutti"));
-        words.add(new Word("two", "otiiko"));
-        words.add(new Word("three", "tolookosu"));
+        words.add(new Word("Where are you going?", "minto wuksus"));
+        words.add(new Word("What is your name?", "tinnә oyaase'nә\n" +
+                "\n"));
+        words.add(new Word("My name is...", "oyaaset..."));
         words.add(new Word("four", "oyyisa"));
         words.add(new Word("five", "massokka"));
         words.add(new Word("six", "temmokka"));
